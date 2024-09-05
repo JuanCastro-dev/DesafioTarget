@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Fibonacci{
+    static int x = 1;
+    static int y = 0;
+    int w; static int r;
+
+    public static void main (String [] args){
+    Scanner w1 = new Scanner(System.in);
+    System.out.println("Escreva o número que deseja conferir");
+    int w = w1.nextInt();
+  
+        while(x<w) {
+            r = x + y;
+            y = x;
+            x = r;
+
+        }
+        if (w == x){
+            System.out.println("O numero faz parte da sequencia");
+        } else {
+            System.out.println("O numero nao faz parte da sequencia");
+        }
+
+
+    }
+}
